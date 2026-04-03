@@ -9,3 +9,6 @@ wheels/
 
 # Virtual environments
 .venv
+# 忽略你指定不想上傳的資料夾
+Gradient-Based/
+.DS_Store

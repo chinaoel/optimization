@@ -10,9 +10,9 @@ import matplotlib.pyplot as plt
 # 確保 Python 能找到外層的 core 模組
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from core.qp_problem import QPProblem
-from core.primal_dual import PrimalDualSolver
-from core.log_barrier import LogBarrierSolver
+from IPM.core.qp_problem import QPProblem
+from IPM.core.primal_dual import PrimalDualSolver
+from IPM.core.log_barrier import LogBarrierSolver
 
 def get_market_data(tickers: list, start_date: str, end_date: str):
     """從 Yahoo Finance 抓取歷史價格並計算年化報酬與共變異數"""

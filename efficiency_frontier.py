@@ -5,8 +5,8 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from core.qp_problem import QPProblem
-from core.primal_dual import PrimalDualSolver
+from IPM.core.qp_problem import QPProblem
+from IPM.core.primal_dual import PrimalDualSolver
 
 def get_market_data(tickers: list, start_date: str, end_date: str):
     print(f"Fetching data for: {', '.join(tickers)}...")
