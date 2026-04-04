@@ -77,3 +77,4 @@ uv run python portfolio_demo.py
 * **Andrej Karpathy**: For the inspiration and profound insights into understanding the backpropagation process from the ground up.
 * **ritvikmath (YouTube)**: For the excellent walkthroughs of the nitty-gritty mathematics behind Support Vector Machines.
 * **Karlsruhe Institute of Technology (KIT)**: Special thanks to my professor for the Optimization course during my exchange semester, which laid the solid theoretical foundation for this project.
+* **Gemini Pro 3.0**: You're the real MVP. I couldn't have done this without your guidance.
