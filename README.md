@@ -46,7 +46,7 @@ For SVM, we explored two different approaches to solving its dual problem:
 
 We also implemented the Kernel Trick to handle non-linearly separable data. 
 
-![SVM Make Circles Classification](svm_make_circles.png)
+![SVM Make Circles Classification](svm_output.png)
 *(Image Placeholder: Non-linear classification decision boundary on the Make Circles dataset using Kernel SVM)*
 
 ## 🚧 Work in Progress
