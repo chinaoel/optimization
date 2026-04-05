@@ -5,13 +5,13 @@
 ![NumPy](https://img.shields.io/badge/Math-NumPy-013243.svg)
 ![CVXPY](https://img.shields.io/badge/Benchmark-CVXPY-red.svg)
 
-## 📖 Overview
+## Overview
 
 This repository contains a from-scratch implementation of **Interior Point Methods (IPM)** for solving Convex Quadratic Programming (QP) problems. It was developed to deeply understand the mathematical machinery behind modern commercial solvers.
 
 The project features two distinct algorithmic solvers and demonstrates their practical utility by solving the **Markowitz Portfolio Optimization** problem using real-world stock market data.
 
-## ⚙️ Core Solvers (`/core`)
+## Core Solvers (`/core`)
 
 The solvers are built with a clean, object-oriented architecture (`BaseQPSolver` abstract base class) to ensure strict separation of concerns between data containers and algorithmic logic.
 
@@ -25,7 +25,7 @@ The solvers are built with a clean, object-oriented architecture (`BaseQPSolver`
    - A sequential unconstrained minimization approach.
    - Uses Newton's Method internally with a strictly feasible backtracking line search to handle inequality constraints via a logarithmic penalty function.
 
-## 📈 Applications (`/applications`)
+## Applications (`/applications`)
 
 ### 1. Markowitz Portfolio Optimization (`portfolio_opt.py`)
 
@@ -39,7 +39,7 @@ Fetches historical market data via `yfinance` to construct the Covariance matrix
 
 Computes and visualizes the Constrained Efficient Frontier by systematically sweeping the risk-aversion parameter ($\lambda$) and utilizing **warm starts** for rapid IPM convergence.
 
-## 🚀 Performance Benchmark
+## Performance Benchmark
 
 The custom `PrimalDualSolver` is systematically benchmarked against **CVXPY** (using the highly-optimized C-based OSQP backend).
 
@@ -52,7 +52,7 @@ For small-to-medium dense matrices (e.g., a 6-asset portfolio), the custom pure-
 
 _(Results generated via `uv run applications/portfolio_opt.py`)_
 
-## 🛠️ Installation & Usage
+## Installation & Usage
 
 This project utilizes [uv](https://github.com/astral-sh/uv) for lightning-fast, reproducible dependency management.
 
