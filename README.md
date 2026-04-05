@@ -46,7 +46,7 @@ For SVM, we explored two different approaches to solving its dual problem:
 
 We also implemented the Kernel Trick to handle non-linearly separable data. 
 
-![SVM Make Circles Classification](svm_make_circles.png)
+![SVM Make Circles Classification](svm_output.png)
 *(Image Placeholder: Non-linear classification decision boundary on the Make Circles dataset using Kernel SVM)*
 
 ## 🚧 Work in Progress
@@ -71,3 +71,10 @@ uv sync
 # Run the Portfolio Optimization Demo
 uv run python portfolio_demo.py
 ```
+
+## Special Thanks & Credits
+
+* **Andrej Karpathy**: For the inspiration and profound insights into understanding the backpropagation process from the ground up.
+* **ritvikmath (YouTube)**: For the excellent walkthroughs of the nitty-gritty mathematics behind Support Vector Machines.
+* **Karlsruhe Institute of Technology (KIT)**: Special thanks to my professor for the Optimization course during my exchange semester, which laid the solid theoretical foundation for this project.
+* **Gemini Pro 3.0**: You're the real MVP. I couldn't have done this without your guidance.
