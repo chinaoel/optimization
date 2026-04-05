@@ -1,4 +1,4 @@
-# ⚙️ Forward-Mode Auto-Differentiation Neural Network
+# Forward-Mode Auto-Differentiation Neural Network
 
 This repository provides a lightweight neural network training framework based on **Forward-mode Auto-Differentiation** using **Dual Numbers**.
 
@@ -6,11 +6,11 @@ Built entirely from scratch without relying on mainstream deep learning librarie
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 The project features a modular design that separates the core differentiation engine from specific application scenarios:
 
-### 🔹 `core.py`
+### `core.py`
 
 Core computation module containing:
 
@@ -20,14 +20,14 @@ Core computation module containing:
 
 ---
 
-### 🔹 `image_recognition.py`
+### `image_recognition.py`
 
 - Implements a **single-layer Logistic Regression model**
 - Performs binary classification on the **Scikit-learn Digits dataset**
 
 ---
 
-### 🔹 `xor.py`
+### `xor.py`
 
 - Builds a **Multi-Layer Perceptron (MLP)**:
   - Input layer: 2 nodes
@@ -37,13 +37,13 @@ Core computation module containing:
 
 ---
 
-### ▶️ Run Image Recognition Training
+### Run Image Recognition Training
 
 ```bash
 uv run image_recognition.py
 ```
 
-### ▶️ Run XOR Neural Network Training
+### Run XOR Neural Network Training
 
 ```bash
 uv run xor.py
@@ -51,13 +51,13 @@ uv run xor.py
 
 ---
 
-## 📊 Experimental Results
+## Experimental Results
 
 We evaluated the core differentiation engine (`core.py`) on two tasks of varying complexity.
 
 ---
 
-### 🧠 1. Image Recognition (Digits Dataset)
+### 1. Image Recognition (Digits Dataset)
 
 - Model: Logistic Regression
 - Parameters: 64 weights + 1 bias
@@ -80,7 +80,7 @@ Step 10 | Label: 0 | Pred: 0.0834 | Loss: 0.0070
 
 ---
 
-### 🔀 2. XOR Computation
+### 2. XOR Computation
 
 - Model: 2-layer MLP
 - Learning rate: `1.0`
@@ -95,7 +95,7 @@ Input: [1, 0] | True: 1 | Pred: 0.4756
 Input: [1, 1] | True: 0 | Pred: 0.5137
 ```
 
-#### 📈 After Convergence (Epoch 5000)
+#### After Convergence (Epoch 5000)
 
 ```plaintext
 --- Epoch 5000 ---
@@ -105,11 +105,11 @@ Input: [1, 0] | True: 1 | Pred: 0.9749
 Input: [1, 1] | True: 0 | Pred: 0.5011
 ```
 
-> ✅ By Epoch 5000, the model successfully approximates the XOR truth table and learns the non-linear decision boundary.
+> By Epoch 5000, the model successfully approximates the XOR truth table and learns the non-linear decision boundary.
 
 ---
 
-## 🖼️ XOR Decision Boundary
+## XOR Decision Boundary
 
 The XOR problem is a classic **non-linear classification problem** that cannot be solved using a single-layer linear model.
 
@@ -122,9 +122,9 @@ With the addition of a hidden layer and the forward-mode autodiff engine, the mo
 
 ---
 
-## 🛠️ Technical Highlights
+## Technical Highlights
 
-### 🧮 Dual Numbers
+### Dual Numbers
 
 Uses the form:
 
@@ -137,7 +137,7 @@ a + bε   (where ε² = 0)
 
 ---
 
-### ⚡ Graph-less Execution
+### Graph-less Execution
 
 - No computational graph construction required
 - Gradients are computed **on-the-fly during forward pass**
@@ -145,7 +145,7 @@ a + bε   (where ε² = 0)
 
 ---
 
-### 🔗 Dynamic Lambda Binding
+### Dynamic Lambda Binding
 
 - Uses Python closures to bind training data dynamically
 - Keeps architecture clean
@@ -153,7 +153,7 @@ a + bε   (where ε² = 0)
 
 ---
 
-## 📌 Summary
+## Summary
 
 This project demonstrates that:
 
