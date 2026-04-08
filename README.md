@@ -2,7 +2,7 @@
 
 This project focuses on building numerical optimization algorithms entirely from scratch. We implemented core Interior Point Method (IPM) solvers and applied them to practical Quadratic Programming (QP) problems, specifically Portfolio Optimization in finance and Support Vector Machines (SVM) in machine learning.
 
-## 📂 Project Structure
+## Project Structure
 
 This project uses `uv` for dependency management. The main codebase is structured as follows:
 
@@ -20,7 +20,7 @@ This project uses `uv` for dependency management. The main codebase is structure
 └── uv.lock                # Lockfile for dependencies
 ```
 
-## 🧠 Core Algorithms: Interior Point Method
+## Core Algorithms: Interior Point Method
 
 In `IPM/core`, we implemented two versions of the Interior Point Method for solving convex optimization problems with inequality constraints:
 
@@ -29,7 +29,7 @@ In `IPM/core`, we implemented two versions of the Interior Point Method for solv
 2. **Primal-Dual Interior Point Method**:
    A more advanced and numerically stable version. Instead of naively scaling an external parameter, this method applies Newton's method directly to the Karush-Kuhn-Tucker (KKT) conditions. By introducing a primal-dual system, the algorithm dynamically controls the duality gap, leading to significantly faster convergence.
 
-## 🚀 Quadratic Programming (QP) Applications
+## Quadratic Programming (QP) Applications
 
 We applied our custom IPM solvers to two classic domains:
 
@@ -49,7 +49,7 @@ We also implemented the Kernel Trick to handle non-linearly separable data.
 ![SVM Make Circles Classification](svm_output.png)
 *(Image Placeholder: Non-linear classification decision boundary on the Make Circles dataset using Kernel SVM)*
 
-## 🚧 Work in Progress
+## Work in Progress
 
 The project is continuously evolving. We are currently working on the following advanced features:
 
@@ -60,7 +60,7 @@ The project is continuously evolving. We are currently working on the following 
 3. **Enigma Solver**
    * Integrating our optimization framework with historical cryptography. We are building a solver capable of simulating and cracking the rotor settings of a WWII Enigma machine.
 
-## 🛠️ Installation & Usage
+## Installation & Usage
 
 Make sure you have Python and `uv` installed on your system.
 
