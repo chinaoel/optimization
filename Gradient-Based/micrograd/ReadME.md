@@ -22,22 +22,7 @@ To solve the XOR problem, this project utilizes a Multi-Layer Perceptron with th
 - **Hidden Layer**: 4 neurons with `tanh` non-linearity.
 - **Output Layer**: 1 neuron (predicting the binary output).
 
-```text
-Input (2)         Hidden Layer (4)         Output (1)
-
-  [ x1 ] --------------- ( n1 )
-          \____          /    \
-               \___     /      \
-                   \__ ( n2 )   \
-                   /   /  \      \_______ [ y_pred ]
-               ___/   /    \     /
-          ____/      /      \   /
-  [ x2 ] --------------- ( n3 )/
-                     \        /
-                      \      /
-                        ( n4 )
-(Every neuron in a layer is fully connected to every neuron in the subsequent layer.)
-```
+![MLP Diagram](./mlp.png)
 
 ## Example Training Run (XOR Problem)
 
