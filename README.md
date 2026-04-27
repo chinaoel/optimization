@@ -29,6 +29,8 @@ In `IPM/core`, we implemented two versions of the Interior Point Method for solv
 2. **Primal-Dual Interior Point Method**:
    A more advanced and numerically stable version. Instead of naively scaling an external parameter, this method applies Newton's method directly to the Karush-Kuhn-Tucker (KKT) conditions. By introducing a primal-dual system, the algorithm dynamically controls the duality gap, leading to significantly faster convergence.
 
+![IPM Toy Example](ipm_central_path.gif)
+
 ## Quadratic Programming (QP) Applications
 
 We applied our custom IPM solvers to two classic domains:
